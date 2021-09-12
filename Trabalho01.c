@@ -211,3 +211,20 @@ void criaMaiusculo (char nomearq[40]){
 
     printf("\n\n");
 }
+void desenho(){
+    int linhas=0, c=0;
+    printf("Digite a Quantidade de linhas\n");
+    scanf("%d",&linhas);
+    printf("\n");
+    for (int i=linhas; i>0; i--){
+        for (int j=0; j<i; j++){
+            printf(" ");
+        }
+        c=c+2;
+        for (int x=1; x<c; x++){
+            printf("*");
+        }
+        printf("\n");
+    }
+    printf("\n\n");
+}
